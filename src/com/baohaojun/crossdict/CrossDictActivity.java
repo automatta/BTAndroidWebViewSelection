@@ -219,6 +219,7 @@ public class CrossDictActivity extends Activity {
     private OnClickListener mEditClearListener = new OnClickListener() {
         public void onClick(View v) {
         	mEdit.setText("");
+        	mEdit.requestFocus();
         }
     };
 
