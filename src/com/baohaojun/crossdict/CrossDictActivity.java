@@ -140,8 +140,10 @@ public class CrossDictActivity extends Activity {
         }
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+// would prefer this program not cover status bar
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//                             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         mWorkingDir = Environment.getExternalStoragePublicDirectory("crossdict/ahd");
 
