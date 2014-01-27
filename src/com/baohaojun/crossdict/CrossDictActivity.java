@@ -55,6 +55,7 @@ public class CrossDictActivity extends Activity {
     private Button mMatchingButton;
     private Button mListButton;
     private BTWebView mWebView;
+    private Button mEditClearButton;
 
     private StarDict mDict;
     private StarDict mUsageDict;
@@ -179,6 +180,8 @@ public class CrossDictActivity extends Activity {
 
         mListView.setOnItemClickListener(mItemClickListener);
 
+        mEditClearButton = (Button) findViewById(R.id.clear_enter_dict_entry_button);
+        mEditClearButton.setOnClickListener(mEditClearListener);
 
         if (checkDictFiles() != null) {
             new AlertDialog.Builder(CrossDictActivity.this)
@@ -210,6 +213,12 @@ public class CrossDictActivity extends Activity {
             continueLoading();
         }
     }
+    
+    private OnClickListener mEditClearListener = new OnClickListener() {
+        public void onClick(View v) {
+        	mEdit.setText("");
+        }
+    };
 
     @Override
     protected void onNewIntent(Intent intent) {
