@@ -17,42 +17,26 @@
               android:selectAllOnFocus="true"
               android:layout_width="0dip"
               android:layout_weight="1.0" />
-  </LinearLayout>
-  
-    <LinearLayout
-      android:descendantFocusability="beforeDescendants"
-      android:focusableInTouchMode="true"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:orientation="horizontal" >
 
-    <Button
-        android:id="@+id/look_up_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight=".25"
-        android:text="Look up" />
+    <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Look up"
+            android:id="@+id/look_up_button" />
 
-    <Button
-        android:id="@+id/defined_with_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight=".25"
-        android:text="Defined with" />
+    <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Defined with"
+            android:id="@+id/defined_with_button" />
 
-    <Button
-        android:id="@+id/matching_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight=".25"
-        android:text="Matching" />
+    <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Matching"
+            android:id="@+id/matching_button" />
 
-    <Button
-        android:id="@+id/lists_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight=".25"
-        android:text="Lists..." />
+    <Button android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Lists..."
+            android:id="@+id/lists_button" />
 
   </LinearLayout>
 
@@ -66,11 +50,11 @@
         android:id="@+id/nearby_dict_entries"
         android:layout_height="match_parent"
         android:layout_width="0dip"
-        android:layout_weight="0.33" />
+        android:layout_weight="0.2" />
     <view
         class="com.baohaojun.crossdict.BTWebView"
         android:layout_width="0dip"
-        android:layout_weight="0.67"
+        android:layout_weight="0.8"
         android:layout_height="match_parent"
         android:id="@+id/webView"/>
   </LinearLayout>

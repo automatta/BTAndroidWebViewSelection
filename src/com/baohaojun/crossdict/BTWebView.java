@@ -217,7 +217,9 @@ public class BTWebView extends WebView implements TextSelectionJavascriptInterfa
 	// Webview setup
 	this.getSettings().setJavaScriptEnabled(true);
 	this.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-	this.getSettings().setPluginsEnabled(true);
+
+	// this appears to have been deprecated since API 9 (http://stackoverflow.com/questions/19362049/setpluginsenabled-not-exist-for-webview)
+	//this.getSettings().setPluginsEnabled(true);
 
 	// Zoom out fully
 	//this.getSettings().setLoadWithOverviewMode(true);
